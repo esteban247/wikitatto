@@ -122,8 +122,9 @@ h1 {
         font-size: 14px;
     }
 
-    .footer {
-        flex-direction: row;
+  .footer {
+        flex-direction: row; /* Cambia la dirección a fila para que los iconos estén uno al lado del otro */
+        justify-content: center;
     }
 
     .footer-icon {
