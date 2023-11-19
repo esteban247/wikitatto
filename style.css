@@ -94,6 +94,10 @@ h1 {
     background: url('youtube.png') center/contain no-repeat;
 }
 
+.section {
+    margin-bottom: 80px; /* Ajusta según sea necesario para dar espacio al footer */
+}
+
 /* Agregar reglas de estilo para hacer la página responsive */
 @media screen and (max-width: 600px) {
     h1 {
@@ -111,7 +115,7 @@ h1 {
     }
 
     .container {
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     #rotating-image {
@@ -122,7 +126,7 @@ h1 {
         font-size: 14px;
     }
 
-  .footer {
+    .footer {
         flex-direction: row; /* Cambia la dirección a fila para que los iconos estén uno al lado del otro */
         justify-content: center;
     }
@@ -133,3 +137,4 @@ h1 {
         margin: 0 5px;
     }
 }
+
