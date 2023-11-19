@@ -8,17 +8,55 @@
 </head>
 <body>
     <div class="navbar">
-        <button class="nav-btn">Botón 1</button>
-        <button class="nav-btn">Botón 2</button>
-        <button class="nav-btn">Botón 3</button>
+        <button class="nav-btn" onclick="scrollToSection('section1')">Botón 1</button>
+        <button class="nav-btn" onclick="scrollToSection('section2')">Botón 2</button>
+        <button class="nav-btn" onclick="scrollToSection('section3')">Botón 3</button>
+        <button class="nav-btn" onclick="scrollToSection('section4')">Botón 4</button>
     </div>
-    <div class="container">
-        <img id="rotating-image" src="imagen.png" alt="Imagen">
-        <p class="test-text">Texto de prueba centrado</p>
+
+    <div class="section" id="section1">
+        <div class="container">
+            <h2>Sección 1</h2>
+            <img id="rotating-image" src="imagen.png" alt="Imagen">
+            <p class="test-text">Texto de prueba centrado</p>
+        </div>
     </div>
+
+    <div class="section" id="section2">
+        <div class="container">
+            <h2>Sección 2</h2>
+            <img id="rotating-image" src="imagen.png" alt="Imagen">
+            <p class="test-text">Texto de prueba centrado</p>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="container">
+            <h2>Sección 3</h2>
+            <img id="rotating-image" src="imagen.png" alt="Imagen">
+            <p class="test-text">Texto de prueba centrado</p>
+        </div>
+    </div>
+
+    <div class="section" id="section4">
+        <div class="container">
+            <h2>Sección 4</h2>
+            <img id="rotating-image" src="imagen.png" alt="Imagen">
+            <p class="test-text">Texto de prueba centrado</p>
+        </div>
+    </div>
+
     <div class="footer">
         <a href="#" class="footer-icon" id="icon1"></a>
         <a href="#" class="footer-icon" id="icon2"></a>
     </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
+
